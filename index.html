@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congenio - Desarrollo para el mundo de hoy -</title>
+    <link rel="stylesheet" href="CSS/BS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/BS/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+
+<body data-bs-theme='light' class="bg-gradient">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <span id="logoEmpresa" class="imagenclaro"></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Nuestro Servicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Titulocontacto">Contactenos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutus">Nosotros</a>
+                    </li>
+                </ul>
+                <button class="btn rounded-fill" onclick="cambiodetema()"><i id='iconCambio'
+                        class="bi bi-moon-fill"></i></button>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div id="home" class="row p-5 rounded-5">
+            <div class="col-md-12 col-xl-6 p-2">
+                <img src="IMG/logo-grande-letras-blanco.png" alt="" srcset="" class="img-fluid">
+            </div>
+            <div class="col-md-12 col-xl-6 text-center p-2">
+                <h1 class="colorLetraBanner fs-1">Transformando ideas en la excelencia digital</h1>
+                <p class="colorLetraBanner fs-3">Innovando tu marca con creatividad. <br>Moldeando tu viaje digital.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="servicios" class="row pt-3">
+            <div class="col-12 text-center">
+                <h1>Nuestros Servicios</h1>
+            </div>
+        </div>
+        <div class="row m-2" id="cardsServicios">
+            <div class="d-flex justify-content-center">
+                <div class="spinner-border m-5" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="Titulocontacto" class="row pt-2">
+            <div class="col-12 text-center p-5">
+                <h1>Contactanos</h1>
+            </div>
+        </div>
+        <div class="row" id="ContactoContenido">
+            <div class="col-md-12 col-lg-6 text-center" id="formContacto">
+                <h4>Ingresa tus datos para que podamos contactarte</h4>
+                <div class="container p-3">
+                    <form>
+                        <div class="mb-3 text-start">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" name="nombre" id="formNombre" class="form-control">
+                            <p class="form-text">Tu nombre aqui</p>
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="text" name="email" id="formEmail" class="form-control">
+                            <p class="form-text">Tu email aqui ej: sroberto@entel.cl</p>
+                        </div>
+                        <div class="mb-3 text-end">
+                            <button type="button" class="btn btn-primary"
+                                onclick="console.log('envio formulario')">Enviar</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <div class="container p-3">
+                    <div class="text-start p-2">
+                        <p>Dirección física:<br>Av. Providencia 1234, Oficina 601<br>Providencia, Santiago<br>Chile</p>
+                        <p>Contacto telefónico:<br>Teléfono: +56 2 1234 5678</p>
+                        <p>Dominio de la página web:<br><a href="#">www.coningenio.cl</a></p>
+                        <p>Correo electrónico:<br><a href="mailto:info@coningenio.cl">info@coningenio.cl</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="aboutus" class="row pt-2">
+            <div class="col-12 text-center mb-2">
+                <h1>Conóscanos</h1>
+            </div>
+            <div class="row m-2" id="contenedorAbout">
+                <div class="d-flex justify-content-center">
+                    <div class="spinner-border m-5" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="JS/BS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+    <script>
+        load();
+    </script>
+</body>
+
+</html>
